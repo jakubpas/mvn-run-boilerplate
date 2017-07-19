@@ -16,6 +16,23 @@
           </archive>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.2</version>
+        <executions>
+          <execution>
+            <id>run</id>
+            <phase>install</phase>
+            <goals>
+              <goal>java</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <mainClass>net.jakubpas.test.App</mainClass>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
   <packaging>jar</packaging>
